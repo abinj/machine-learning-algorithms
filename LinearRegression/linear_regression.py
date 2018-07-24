@@ -7,7 +7,7 @@ sns.set()
 
 from sklearn import linear_model
 
-df = pd.read_csv("linear_regression_df.csv")
+df = pd.read_csv("LinearRegression/linear_regression_df.csv")
 df.columns = ['X', 'Y']
 plt.scatter(x=df['X'], y=df['Y'])
 plt.ylabel('Response')
