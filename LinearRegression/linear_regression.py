@@ -5,7 +5,7 @@ import numpy as np
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error
 
-df = pd.read_csv("grey_kangaroos.csv")
+df = pd.read_csv("dataset/grey_kangaroos.csv")
 df.columns = ['X', 'Y']
 
 trainX = np.asarray(df.X[20:len(df.X)]).reshape(-1, 1)
