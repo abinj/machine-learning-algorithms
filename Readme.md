@@ -1,4 +1,4 @@
-# Linear Regression
+#1. Linear Regression
     * The mathematical technique to find a line (or curve) that best matches the points of data
     that you collected is called regression.
 
