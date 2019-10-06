@@ -5,9 +5,11 @@ import numpy as np
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error
 
+# Read dataset
 df = pd.read_csv("dataset/grey_kangaroos.csv")
 df.columns = ['X', 'Y']
 
+# Split the dataset for training and test data
 trainX = np.asarray(df.X[20:len(df.X)]).reshape(-1, 1)
 trainY = np.asarray(df.Y[20:len(df.Y)]).reshape(-1, 1)
 testX = np.asarray(df.X[:20]).reshape(-1, 1)
