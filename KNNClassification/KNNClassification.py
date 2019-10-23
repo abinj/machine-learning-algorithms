@@ -51,7 +51,5 @@ plt.show()
 
 # Root Mean Squared Deviation
 rmsd = np.sqrt(mean_squared_error(y_test, y_pred))      # Lower the rmse(rmsd) is, the better the fit
-r2_value = r2_score(y_test, y_pred)                     # The closer towards 1, the better the fit
 
 print("Root Mean Square Error \n", rmsd)
-print("R^2 Value: \n", r2_value)
