@@ -28,9 +28,11 @@ r2_value = model.score(trainX, trainY)
 rmsd = np.sqrt(mean_squared_error(testY, predicted))
 
 # Printing values
-print("Slope: \n", model.coef_)
-print("Intercept: \n", model.intercept_)
+print("Slope(b1): \n", model.coef_)
+print("Y Intercept(b0): \n", model.intercept_)
+#Lower the rmse, model best fit
 print("Root Mean Square Deviation: \n", rmsd)
+#Higher the R^2, model best fit
 print("R^2 value: \n", r2_value)
 print("Prediction over test data: \n", predicted)
 
