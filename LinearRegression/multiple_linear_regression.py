@@ -34,8 +34,8 @@ plt.show()
 rmsd = np.sqrt(mean_squared_error(Y_test, y_pred))      # Lower the rmse(rmsd) is, the better the fit
 r2_value = r2_score(Y_test, y_pred)                     # The closer towards 1, the better the fit
 
-print("Intercept: \n", model.intercept_)
-print("Root Mean Square Error \n", rmsd)
+print("Y-Intercept: \n", model.intercept_)
+print("Root Mean Square Error(rmsd) \n", rmsd)
 print("R^2 Value: \n", r2_value)
 
 
