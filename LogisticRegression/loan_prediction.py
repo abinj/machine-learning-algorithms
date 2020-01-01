@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
@@ -29,8 +30,15 @@ test_x = pd.get_dummies(test_x)
 print('shape of training data: ', train_x.shape)
 print('shape of testing data : ', test_x.shape)
 
-model = LogisticRegression()
+model = LogisticRegression(multi_class='auto')
 
 model.fit(train_x, train_y)
 
+predict = model.predict(test_x)
 
+print('Predicted Values on test data ', predict)
+
+print('\nAccuracy score on test data : ', accuracy_score(test_y, predict))
+
+report = classification_report(test_y, predict)
+print("\nClassification Report: ", report)
