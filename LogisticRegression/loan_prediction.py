@@ -4,7 +4,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-data = pd.read_csv("/home/abin/my_works/github_works/machine-learning-algorithms/LogisticRegression/dataset/train.csv")
+data = pd.read_csv("/home/abin/my_works/github_works/machine-learning-algorithms/LogisticRegression/dataset/loan_prediction.csv")
 print(data.head())
 
 print("\nColumn Names")
