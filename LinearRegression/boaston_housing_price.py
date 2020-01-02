@@ -20,7 +20,7 @@ plt.show()
 correlation_matrix = boston.corr().round(2)
 # annot = True to print the values inside the square
 sns.heatmap(data=correlation_matrix, annot=True)
-
+plt.show()
 
 plt.figure(figsize=(20, 5))
 
@@ -35,3 +35,4 @@ for i, col in enumerate(features):
     plt.title(col)
     plt.xlabel(col)
     plt.ylabel('MEDV')
+    plt.show()
