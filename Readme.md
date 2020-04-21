@@ -14,3 +14,6 @@
 
 # Environment used
     * python 3.6.5
+
+# Root Mean Squared Error
+The root-mean-square deviation (RMSD) or root-mean-square error (RMSE) is a frequently used measure of the differences between values (sample or population values) predicted by a model or an estimator and the values observed.
