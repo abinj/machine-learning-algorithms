@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
+from sklearn.neighbors import KNeighborsRegressor
 
 
 def prepare_country_stats(oecd_bli, gdp_per_capita):
@@ -33,6 +34,7 @@ plt.show()
 
 # Select a linear model
 model = LinearRegression()
+# model = KNeighborsRegressor(n_neighbors=5)
 
 # Train the model
 model.fit(X, y)
